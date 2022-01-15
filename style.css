@@ -1,0 +1,157 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: borde;
+    
+
+}
+nav{ 
+    display: flex;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: rgb(103, 231, 210);
+    font-family: 'Oswald', sans-serif;     
+}
+.logo{
+    cursor: pointer;
+    color:white;
+    text-transform: uppercase;
+    font-size: 30px;
+    letter-spacing: 3px;
+}  
+.navlinks{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 45%; 
+    font-size: 22px;
+    letter-spacing: 1.5px;
+    
+}
+.navlinks a{ 
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+    cursor: pointer;
+}
+.navlinks li a:hover{ 
+    color:blue;
+}
+
+.navlinks li{
+    color:rgb(104, 33, 218);
+
+}
+
+.navlinks li a:hover{ 
+    color:rgb(51, 102, 102);
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section h2 {
+    font-size: 5rem;
+}
+
+.home {
+    background-color: rgb(34, 86, 134);
+}
+
+.about {
+    background-color: rgb(124, 133, 74);
+}
+.portfolio{
+    background-color: rgb(149, 77, 158);
+}
+.contact {
+    background-color: rgb(90, 68, 68);
+}
+
+.burger{
+    display: none;
+}
+
+.burger div{
+    display: flex;
+    background-color: white;
+    width: 28px;
+    height: 4px;
+    margin: 5px;
+
+}
+
+
+
+
+@media screen and (max-width: 1024px) {
+    .navlinks{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+    
+    .navlinks{
+        /*display: none;*/
+        position: fixed;
+        left: -60vh;
+        height: 92vh;
+        top: 8vh;
+        background-color: rgb(103, 231, 210);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 60%;
+        min-height: none;
+        transition: all 0.3s;
+        color: rgb(103, 231, 210);
+        
+    }
+    
+    .navlinks.open{
+        position: fixed;
+        left: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: rgb(103, 231, 210);;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 60%;
+        min-height: none;
+        transition: all 0.3s;
+        font-size: 32px;
+        
+    }
+    .burger{
+        display: inline;
+        position: absolute;
+        left: 8%;
+        cursor: pointer;
+
+    }
+    
+    
+    /*.navlinks li:nth-child(1) {
+        transition: all 0.5s ease 0.2s;
+    }
+    .navlinks li:nth-child(2) {
+        transition: all 0.5s ease 0.4s;
+    }
+    .navlinks li:nth-child(3) {
+        transition: all 0.5s ease 0.6s;
+    }
+    .navlinks li:nth-child(4) {
+        transition: all 0.5s ease 0.8s;
+    }*/
+    
+}
