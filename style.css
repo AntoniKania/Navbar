@@ -1,7 +1,8 @@
 *{
     margin:0px;
     padding:0px;
-    box-sizing: borde;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
     
 
 }
@@ -141,7 +142,7 @@ section h2 {
     }
     
     
-    /*.navlinks li:nth-child(1) {
+    .navlinks li:nth-child(1) {
         transition: all 0.5s ease 0.2s;
     }
     .navlinks li:nth-child(2) {
@@ -152,6 +153,6 @@ section h2 {
     }
     .navlinks li:nth-child(4) {
         transition: all 0.5s ease 0.8s;
-    }*/
+    }
     
 }
